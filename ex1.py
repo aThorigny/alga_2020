@@ -1,12 +1,6 @@
 # EXERCICE 1
 
 #
-# Question 1
-#
-
-# Dans une séquence de taille N il y a (N+1)N/2 sous-séquences  (JE CROIS QUE C'EST FAUX A REVOIR)
-
-#
 #  Question 2
 #
 
@@ -24,11 +18,9 @@ def is_palindrome(X):
 
     return True
 
-# Complexité de l'algorithme : Theta(n) avec n la longueur de la string en paramètre
-
 
 # def is_palindrome(X):
-#     if X is None or X == '' or X == []:
+    #     if X is None or X == '' or X == []:
 #         return False
 #     length = len(X)
 #     if length == 1:
