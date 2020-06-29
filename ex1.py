@@ -1,14 +1,38 @@
+# EXERCICE 1
+
+#
+#  Question 2
+#
+
 def is_palindrome(X):
+
     if X is None or X == '' or X == []:
         return False
-    length = len(X)
-    if length == 1:
-        return True
-    index = length // 2
-    first_part = X[0:index]
-    second_part = X[index + (length % 2):length][::-1]
-    return first_part == second_part
 
+    half_length = int(len(X) / 2)
+
+    for i in range(0, half_length):
+        # on vérifie que la première partie de la string est égale à la deuxieme partie
+        if X[i] != X[len(X) - i - 1]:
+            return False
+
+    return True
+
+
+# def is_palindrome(X):
+    #     if X is None or X == '' or X == []:
+#         return False
+#     length = len(X)
+#     if length == 1:
+#         return True
+#     index = length // 2
+#     first_part = X[0:index]
+#     second_part = X[index + (length % 2):length][::-1]
+#     return first_part == second_part
+
+#
+#   Question 3
+#
 
 def get_subs(s):
     n = len(s)
@@ -24,6 +48,11 @@ def get_longest_palindrome(X):
             lpal = sub
     return ''.join(lpal)
 
+
+
+#
+#   Question 5
+#
 
 def get_longest_palindrome_dyn(X):
     length = len(X)
