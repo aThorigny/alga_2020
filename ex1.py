@@ -19,17 +19,6 @@ def is_palindrome(X):
     return True
 
 
-# def is_palindrome(X):
-    #     if X is None or X == '' or X == []:
-#         return False
-#     length = len(X)
-#     if length == 1:
-#         return True
-#     index = length // 2
-#     first_part = X[0:index]
-#     second_part = X[index + (length % 2):length][::-1]
-#     return first_part == second_part
-
 #
 #   Question 3
 #
